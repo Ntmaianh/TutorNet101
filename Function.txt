@@ -1,0 +1,97 @@
+Ở các bài học trước, chúng ta đã cùng nhau tìm hiểu về các CẤU TRÚC ĐIỀU KIỆN VÀ CẤU TRÚC VÒNG LẶP. Thì hôm nay mình hướng dẫn mọi người làm menu nhé.
+
+  static void Menu()
+        {
+            int Chon; 
+            do
+            {
+                Console.WriteLine("---------MENU----------");
+                Console.WriteLine("--------1. BAI 1----------");
+                Console.WriteLine("--------2. BAI 2----------");
+                Console.WriteLine("--------3. BAI 3----------");
+                Console.WriteLine("--------0. ThOAT ----------");
+                Console.WriteLine("Chon chuc nang");
+                 Chon = Convert.ToInt32(Console.ReadLine());
+
+                switch (Chon)
+                {
+                    case 1: 
+                Console.WriteLine("--------1. BAI 1----------");
+                        break;   
+                    case 2: 
+                Console.WriteLine("--------2. BAI 2----------");
+                        break;   
+                    case 3: 
+                Console.WriteLine("--------3. BAI 3----------");
+                        break;
+                   case 0: 
+                Console.WriteLine("-------- THOAT----------");
+                        Environment.Exit(0); // dùng để thoát 
+                        break; 
+                 Environment.Exit(0); là thoát cả chương trình ra. Nếu không có thì phần code ở đằng sau vẫn được chạy tiếp 
+
+                    default:
+
+                        Console.WriteLine("chay laiii ");
+
+                        break;
+                }
+
+
+            } while (Chon != 0 );
+
+Cú pháp khai báo hàm:          
+[Từ khóa 1] [Từ khóa 2] [Từ khóa n]  <Kiểu dữ liệu trả về> <Tên hàm>([Parameter]){ } 
+Trong đó:
+
+ [Từ khóa 1], [Từ khóa 2], [Từ khóa n] là các từ khóa như: public, static, read only … và có thể không điền.
+ Kiểu dữ liệu trả về như: từ khóa void, hay mọi kiểu dữ liệu như int, long, bool, SinhVien…
+ Tên hàm:
+Là tên gọi của hàm. Mọi người học cách đặt tên biến chưa.Mình hay dùng cách đặt lên kiểu Lạc Đà. Và tên hàm thường bắt đầu bằng động từ 
+Tên bạn có thể đặt tùy ý nhưng nên đặt tên theo quy tắc đặt tên để có sự đồng bộ ngầm định giữa các lập trình viên và dễ tìm, dễ nhớ (xem lại quy tắc đặt tên ở bài BIẾN TRONG C#).
+Hãy xem cách khởi tạo hàm giống khởi tạo một biến ở chỗ. Đều cần kiểu dữ liệu và tên. Có thể có các từ khóa. Tên để tái sử dụng hàm ở nơi mong muốn.
+Parameter là tham số truyền vào để sử dụng nội bộ trong hàm. Cấu trúc khởi tạo như một biến bình thường. Có thể không điền.
+Hàm chỉ được khai báo bên trong class.
+Lưu ý:
+
+Mọi hàm đều phải có cặp ngoặc nhọn { } biểu thị là một khối lệnh. Mọi dòng code xử lý của hàm đều được viết bên trong cặp ngoặc nhọn { } này.
+Không thể khai báo một hàm trong một hàm khác theo cách thông thường.
+
+Có 2 loại hàm chính : 
+  1. Hàm không trả về 
+            1.1. Hàm không trả về có tham số
+            1.1. Hàm không trả về không tham số
+    2.Hàm có trả về 
+            2.1: hàm có trả về - không tham số 
+            2.2 hàm có trả về - có tham số 
+   static void GetTuoi()
+        {
+            Console.WriteLine("Nhap tuoi cua ban; ");
+            int tuoi = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Tuoi cua toi la: {tuoi}");
+        }
+        static void GetTuoi(int namSinh)
+        {
+            int tuoi = 2023 - namSinh;
+            Console.WriteLine($"Tuổi = {tuoi}");
+        }
+
+        static int TinhTuoi()
+        {
+            Console.WriteLine("Nhap nam sinh cua ban");
+            int namSinh = Convert.ToInt32(Console.ReadLine());
+            int tuoi = 2023 - namSinh;
+            return tuoi;
+        }
+      
+        static int TinhTuoi(int namSinh)
+        {
+            Console.WriteLine("Nhap nam sinh cua ban");
+           
+            int tuoi = 2023 - namSinh;
+            return tuoi;
+
+        }
+- công dụng của hàm 
++ Có thể tái sử dụng lại code 
++ code trong clean hơn 

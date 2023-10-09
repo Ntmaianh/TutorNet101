@@ -1,0 +1,48 @@
+Buổi ngày hôm trước mọi người đã cùng chị Giang ôn tập về nhập xuất dữ liệu rồi đúng không ? Mọi người có không hiểu phần nào không ?
+Rồi ok. Buổi ngày hôm nay chúng ta tiếp tục ôn tập câu điều kiện và vòng lặp nhé. 
+Mình chia làm 2 phần nhé
++ Câu điều kiện 
+- Cái thứ nhất : if-esle (nếu thì)
+if(điều kiện) {t/m điều kiện rồi thì làm gì}
+else if (điều kiện) {t/m đk rồi làm gì}
++ else if luôn đứng trước else và sau if
+else nếu không t/m tất cả điều kiện ở trên thì => nó sẽ rơi vào else {thực hiện gì } => else có thể có hoặc không 
+phân biệt khi tất cả điều kiện dùng if hết và dùng if else if else 
+- cái thứ 2 : switch - case
++ lệnh switch cho phép chúng ta so sánh 1 biến với 1 danh sách các giá trị. Mỗi giá trị tương ứng với 1 case 
+cái truyền trong switch là gì => gtri ở case cũng là kiểu đó
++ lệnh break : dừng lại => sẽ không so sánh tiếp với các case sau 
++ sau mỗi 1 case phải có break => không có sẽ báo lỗi 
++ default : trường hợp khác các trường hợp còn lại 
++ case - when : case int n when (điều kiện )
+
+=> khác nhau giữa if và switch : if kiểm tra nhiều biến 1 lúc , switch chỉ ktra 1 biến 1 lúc 
+
+nếu 1 đk t/m nhiều case thì sao ? 
+vd cấp 1 gồm từ lớp 1 , 2 ,3 , 4 , 5 => cấp 1 ? Mọi người giải quyết ntn 
+c1 : case 1 :						cách 2 : từ 7.0 hỗ trợ: 
+     case 2 :						case int n when (đk)					
+     case 3:						n : n là các giá trị của từng case 
+     case 4 : 						ở đây  giải quyết bài toán trên như sau : 
+     case 5 : 						case int n when (n > 0 && n < 6)
+	console.Writeline ("caasp1");			console.Writeline ("caasp1");
+	break ;  						break ;
+	
++ Vòng lặp 
+- Cái thứ nhất : while : vòng lặp điều kiện => nếu t/m đk => code trong vòng lặp vẫn chạy 
+						không t/m => code dừng 
+						-> phải thêm bước nhảy => vòng lặp vô hạn 
+- cái thứ hai : do - while  : do - while là chạy 1 lần rồi mới kiểm tra điều kiện -> phải thêm bước nhảy => vòng lặp vô hạn
+- cái thứ 3 : for 
+	for(khai báo giá trị bắt đầu chạy vòng lặp ; điều kiện lặp ; bước nhảy)
+	+ có thể thiếu đk lặp nhưng thiếu đk lặp nó sẽ lặp trong vô hạn 
+	+ có thể thiếu bước nhảy nhưng thiếu bước nhảy nó sẽ lặp trong vô hạn 
+	+ bắt buộc phải khai báo giá trị bắt đầu lặp 
+	
+- phân biệt i++ và ++i : 
+	int i = 0;
+	a = i++ ; => a = 0 => vì sao a = 0 => bởi vì a được gán gtri của i trước khi nó + lên 1 đơn vị 
+	a = ++i ; => a = 2 => vì sao a = 2 => bởi vì a được gán gtri của i sau khi nó + lên 1 đơn vị nữa (trước đó i đã +1 rồi )
+- kết hợp if với vòng lặp for 
+-Ngoài ra sau này khi mọi người làm việc với collection thì sẽ có 1 cái nữa là foreach 
+=> sau khi gt hỏi mọi người đã học hết trên lớp chưa.  
